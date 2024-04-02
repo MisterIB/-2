@@ -37,7 +37,7 @@ void NumberOne() {
 	if (IsNotZero == false) std::cout << "No";
 }
 
-int TheLongestWay(std::pair<std::string, std::string> Route, std::vector<std::pair<std::string, std::string>> StartEndPoints, std::string& LastPoint, int& LengthPath, int& MaxLengthPath) {
+void TheLongestWay(std::pair<std::string, std::string> Route, std::vector<std::pair<std::string, std::string>> StartEndPoints, std::string& LastPoint, int& LengthPath, int& MaxLengthPath) {
 	for (std::pair<std::string, std::string> Path : StartEndPoints) {
 		if (Route.second == Path.first) {
 			LengthPath += 1;
@@ -47,12 +47,12 @@ int TheLongestWay(std::pair<std::string, std::string> Route, std::vector<std::pa
 	if (MaxLengthPath < LengthPath) {
 		MaxLengthPath = LengthPath;
 		LastPoint = Route.second;
+		LengthPath = 0;
 	}
-	return 1;
 }
 
 void NumberTwo() {
-	std::vector<std::pair<std::string, std::string>> StartEndPoints { {"123", "456"}, {"789", "101112"}, {"456", "789"}};
+	std::vector<std::pair<std::string, std::string>> StartEndPoints{ {"123", "456"}, {"789", "101112"}, {"456", "789"}, {"456", "9080"}, {"9080","1040"}, {"101112", "098"}};
 	std::string LastPoint;
 	int LengthPath = 0;
 	int MaxLengthPath = 0;

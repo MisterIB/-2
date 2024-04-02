@@ -24,6 +24,29 @@ def NumberOne():
         print("Yes")
     if IsNotZero == False:
         print("No")
+
+
+def TheLongestWay(Route, StartEndPoints, LastPoint, LengthPath, MaxLengthPath):
+    for Path in StartEndPoints:
+        if Route[1] == Path[0]:
+            LengthPath.append(1)
+            TheLongestWay(Path, StartEndPoints, LastPoint, LengthPath, MaxLengthPath)
+    if sum(MaxLengthPath) < sum(LengthPath):
+        MaxLengthPath[0] = sum(LengthPath)
+        LastPoint[0] = Route[1]
+        LengthPath.clear()
+
+
+def NumberTwo():
+    StartEndPoints = [["123", "456"], ["789", "101112"], ["456", "789"], ["456", "9080"], ["9080", "1040"], ["101112", "098"], ["098", "54"]]
+    LastPoint = [""]
+    MaxLengthPath = [0]
+    for Route in StartEndPoints:
+        LengthPath = [0]
+        TheLongestWay(Route, StartEndPoints, LastPoint, LengthPath, MaxLengthPath)
+    print(LastPoint[0])
+
+
 def IsLengthEven(Number):
     Length = 0
     absNumber = abs(Number)
@@ -34,6 +57,7 @@ def IsLengthEven(Number):
         return True
     else:
         return False
+
 
 def NumberThree():
     print("Введите числа, после введения всех чисел введите 0")
@@ -46,12 +70,13 @@ def NumberThree():
             AmountNmbrsEvenLngth += 1
     print(AmountNmbrsEvenLngth)
 
+
 print("Выберите номер задания")
 TaskNumber = int(input())
 match TaskNumber:
     case 1:
         NumberOne()
     case 2:
-        print("")
+        NumberTwo()
     case 3:
         NumberThree()

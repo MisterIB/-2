@@ -1,0 +1,10 @@
+C:\Users\user\Desktop\НГТУ ЭТИ\Прога\лаба2\Лабораторная\-2\sharp\obj\Debug\sharp.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\НГТУ ЭТИ\Прога\лаба2\Лабораторная\-2\sharp\obj\Debug\sharp.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\НГТУ ЭТИ\Прога\лаба2\Лабораторная\-2\sharp\bin\Debug\sharp.exe.config
+C:\Users\user\Desktop\НГТУ ЭТИ\Прога\лаба2\Лабораторная\-2\sharp\bin\Debug\sharp.exe
+C:\Users\user\Desktop\НГТУ ЭТИ\Прога\лаба2\Лабораторная\-2\sharp\bin\Debug\sharp.pdb
+C:\Users\user\Desktop\НГТУ ЭТИ\Прога\лаба2\Лабораторная\-2\sharp\obj\Debug\sharp.exe
+C:\Users\user\Desktop\НГТУ ЭТИ\Прога\лаба2\Лабораторная\-2\sharp\obj\Debug\sharp.pdb
+C:\Users\user\Desktop\НГТУ ЭТИ\Прога\лаба2\Лабораторная\-2\sharp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\Desktop\НГТУ ЭТИ\Прога\лаба2\Лабораторная\-2\sharp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\user\Desktop\НГТУ ЭТИ\Прога\лаба2\Лабораторная\-2\sharp\obj\Debug\sharp.csproj.CopyComplete

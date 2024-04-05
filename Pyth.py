@@ -38,7 +38,7 @@ def TheLongestWay(Route, StartEndPoints, LastPoint, LengthPath, MaxLengthPath):
 
 
 def NumberTwo():
-    StartEndPoints = [["123", "456"], ["789", "101112"], ["456", "789"], ["456", "9080"], ["9080", "1040"], ["101112", "098"], ["098", "54"]]
+    StartEndPoints = [["Новосибирск", "Дубай"], ["Дубай", "Улан-Удэ"], ["Новосибирск", "Искитим"], ["Искитим", "Линево"], ["Искитим", "Лондон"], ["Лондон", "Стамбул"]]
     LastPoint = [""]
     MaxLengthPath = [0]
     for Route in StartEndPoints:

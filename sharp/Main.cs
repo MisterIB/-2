@@ -87,12 +87,12 @@ class Program
     {
         List<Tuple<string, string>> StartEndPoints = new List<Tuple<string, string>>()
         { 
-        new Tuple<string, string>("123", "456"),
-        new Tuple<string, string>("789", "101112"),
-        new Tuple<string, string>("456", "789"),
-        new Tuple<string, string>("456", "9080"),
-        new Tuple<string, string>("9080","1040"),
-        new Tuple<string, string>("101112", "098") 
+        new Tuple<string, string>("Новосибирск", "Дубай"),
+        new Tuple<string, string>("Дубай", "Искитим"),
+        new Tuple<string, string>("Дубай", "Улан-Удэ"),
+        new Tuple<string, string>("Искитим", "Лондон"),
+        new Tuple<string, string>("Лондон","Стамбул"),
+        new Tuple<string, string>("Искитим", "Лондон") 
         };
         string LastPoint = "";
         int LengthPath = 0;

@@ -34,21 +34,21 @@ fun NumberOne() {
     if (IsNotZero == false) println("No")
 }
 
-fun theLongestWay(route: Pair<String, String>, startEndPoints: List<Pair<String, String>>, lastPoint: StringBuilder, lengthPath: Int, maxLengthPath: Int): Int {
+fun theLongestWay(Route: Pair<String, String>, StartEndPoints: List<Pair<String, String>>, lastPoint: StringBuilder, lengthPath: Int, maxLengthPath: Int): Int {
     var currentLengthPath = lengthPath
     var currentMaxLengthPath = maxLengthPath
 
-    for (path in startEndPoints) {
-        if (route.second == path.first) {
+    for (Path in StartEndPoints) {
+        if (Route.second == Path.first) {
             currentLengthPath += 1
-            currentMaxLengthPath = theLongestWay(path, startEndPoints, lastPoint, currentLengthPath, currentMaxLengthPath)
+            currentMaxLengthPath = theLongestWay(Path, StartEndPoints, lastPoint, currentLengthPath, currentMaxLengthPath)
         }
     }
 
     if (currentMaxLengthPath < currentLengthPath) {
         currentMaxLengthPath = currentLengthPath
         lastPoint.setLength(0)
-        lastPoint.append(route.second)
+        lastPoint.append(Route.second)
         currentLengthPath = 0
     }
 
@@ -56,21 +56,21 @@ fun theLongestWay(route: Pair<String, String>, startEndPoints: List<Pair<String,
 }
 
 fun NumberTwo() {
-    val startEndPoints = listOf(
-        Pair("123", "456"),
-        Pair("789", "101112"),
-        Pair("456", "789"),
-        Pair("456", "9080"),
-        Pair("9080", "1040"),
-        Pair("101112", "098")
+    val StartEndPoints = listOf(
+        Pair("Новосибирск", "Дубай"),
+        Pair("Дубай", "Искитим"),
+        Pair("Дубай", "Улан-Удэ"),
+        Pair("Искитим", "Лондон"),
+        Pair("Лондон", "Стамбул"),
+        Pair("Новосибирск", "Искитим")
     )
     val lastPoint = StringBuilder()
     var lengthPath = 0
     var maxLengthPath = 0
 
-    for (route in startEndPoints) {
+    for (Route in StartEndPoints) {
         lengthPath = 0
-        maxLengthPath = theLongestWay(route, startEndPoints, lastPoint, lengthPath, maxLengthPath)
+        maxLengthPath = theLongestWay(Route, StartEndPoints, lastPoint, lengthPath, maxLengthPath)
     }
 
     println(lastPoint)

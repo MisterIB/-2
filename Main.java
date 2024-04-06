@@ -81,12 +81,12 @@ public class Main{
 
     public static void NumberTwo() {
         List<Pair<String, String>> StartEndPoints = new ArrayList<>();
-        StartEndPoints.add(new Pair<>("123", "456"));
-        StartEndPoints.add(new Pair<>("789", "101112"));
-        StartEndPoints.add(new Pair<>("456", "789"));
-        StartEndPoints.add(new Pair<>("456", "9080"));
-        StartEndPoints.add(new Pair<>("9080", "1040"));
-        StartEndPoints.add(new Pair<>("101112", "098"));
+        StartEndPoints.add(new Pair<>("Новосибирск", "Дубай"));
+        StartEndPoints.add(new Pair<>("Дубай", "Улан-Удэ"));
+        StartEndPoints.add(new Pair<>("Искитим", "Лондон"));
+        StartEndPoints.add(new Pair<>("Дубай", "Искитим"));
+        StartEndPoints.add(new Pair<>("Лондон", "Стамбул"));
+        StartEndPoints.add(new Pair<>("Новосибирск", "Линево"));
 
         StringBuilder LastPoint = new StringBuilder();
         int[] LengthPath = {0};

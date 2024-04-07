@@ -87,7 +87,6 @@ func numberThree() {
     print(amountNmbrsEvenLngth)
 }
 
-// Main
 print("Выберите номер задания")
 if let taskNumber = Int(readLine()!) {
     switch taskNumber {

@@ -47,12 +47,12 @@ function TheLongestWay(Route, StartEndPoints, LastPoint, LengthPath, MaxLengthPa
 
 function NumberTwo() {
     const StartEndPoints = [
-        ["123", "456"],
-        ["789", "101112"],
-        ["456", "789"],
-        ["456", "9080"],
-        ["9080", "1040"],
-        ["101112", "098"]
+        ["Новосибирск", "Дубай"],
+        ["Дубай", "Улан-Удэ"],
+        ["Искитим", "Лондон"],
+        ["Дубай", "Искитим"],
+        ["Лондон", "Стамбул"],
+        ["Новосибирск", "Линево"]
       ];
 	const LastPoint = {lp: ""};
 	const LengthPath = {lp: 0};
@@ -100,4 +100,3 @@ switch(TaskNumber) {
     default:
       break;
   }
-  

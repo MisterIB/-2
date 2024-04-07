@@ -4,7 +4,7 @@ isLengthEven number = even (length (show (abs number)))
 
 numberThree :: IO ()
 numberThree = do
-    putStrLn "Enter numbers, enter 0 after all numbers are entered"
+    putStrLn "Введите числа, после ввода всех чисел введите 0"
     let countEvenLength = countEvenLengthHelper 0
     countEvenLength
 

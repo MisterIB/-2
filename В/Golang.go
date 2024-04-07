@@ -62,7 +62,7 @@ func TheLongestWay(Route [2]string, StartEndPoints [][2]string, LastPoint *strin
 }
 
 func NumberTwo() {
-	StartEndPoints := [][2]string{{"123", "456"}, {"789", "101112"}, {"456", "789"}, {"456", "9080"}, {"9080", "1040"}, {"101112", "098"}}
+	StartEndPoints := [][2]string{{"Новосибирск", "Дубай"}, {"Дубай", "Искитим"}, {"Лондон", "Стамбул"}, {"Искитим", "Лондон"}, {"Дубай", "Улан-Удэ"}, {"Новосибирск", "Линево"}}
 	var LastPoint string
 	LengthPath := 0
 	MaxLengthPath := 0
